@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm-tododb
+data:
+  USER: todoapp
+  PASSWORD: redhat123
+  SVC_HOSTNAME: tododb
+  NAME: todo

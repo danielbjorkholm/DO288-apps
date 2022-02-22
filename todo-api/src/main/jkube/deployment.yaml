@@ -1,0 +1,10 @@
+apiVersion: apps/v1
+kind: Deployment
+spec:
+  template:
+    spec:
+      containers:
+        - envFrom:
+          - prefix: DATABASE_
+            configMapRef:
+              name: cm-tododb 
